@@ -12,7 +12,7 @@ SECTIONS
 	. = ALIGN(4);
 	.text :
 	{
-		start.o (.text)
+		UserExceptionVectors.o (.text)
 		*(.text)
 	}
 	
@@ -26,9 +26,7 @@ SECTIONS
 	{
 		*(.data)
 	}
-	
-	
-	
+		
 	. = ALIGN(4);
 	bss_start = .;
 	.bss:
