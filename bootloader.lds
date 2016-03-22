@@ -12,8 +12,8 @@ SECTIONS
 	. = ALIGN(4);
 	.text :
 	{
-		UserExceptionVectors.o (.text)
-		*(.text)
+		./build/UserExceptionVectors.o (.text)
+		./build/*(.text)
 	}
 	
 	/*
