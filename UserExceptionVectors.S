@@ -13,7 +13,7 @@
 
 	.global Vectors
 Vectors:
-	ldr		pc, ResetV		//; 00 - Reset
+	b		pc, ResetV		//; 00 - Reset
 	ldr		pc, UndefV		//; 04 - Undefined instructions
 	ldr		pc,	SWIV		//; 08 - SWI instructions
 	ldr		pc,	PAbortV		//; 0C - Instruction fetch aborts

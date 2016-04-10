@@ -7,7 +7,7 @@ OUTPUT_ARCH(arm)
 ENTRY(Vectors)
 SECTIONS
 {
-	. = 0xFFFF0000;
+	. = 0xFFFF0200;
 
 	. = ALIGN(4);
 	.text :
